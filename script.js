@@ -1,7 +1,11 @@
-//your JS code here. If required.
 const n=document.getElementById("counter");
 const btn=document.getElementById("incrementBtn");
 
+let count=0;
+n.textContent=count;
+
+
 btn.addEventListener("click",()=>{
-  n.textContent=Number(n.textContent)+1;
+  count++;
+  n.textContent=count;
 });
